@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>草莓糖果 2048</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Little Makers</p>
+        <h1>草莓糖果 2048</h1>
+        <p class="hero-text">一个圆润、轻甜、适合手机玩的 2048 小游戏。</p>
+      </section>
+
+      <section class="game-card">
+        <header class="game-head">
+          <div class="score-box"><span>分数</span><strong id="score">0</strong></div>
+          <div class="score-box"><span>最高</span><strong id="best">0</strong></div>
+          <button id="restartBtn" class="action-btn">重新开始</button>
+        </header>
+
+        <div class="board" id="board"></div>
+
+        <div class="controls">
+          <button data-dir="up" class="control-btn">上</button>
+          <div class="control-row">
+            <button data-dir="left" class="control-btn">左</button>
+            <button data-dir="down" class="control-btn">下</button>
+            <button data-dir="right" class="control-btn">右</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
